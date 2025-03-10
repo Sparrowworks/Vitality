@@ -14,6 +14,8 @@ signal max_health_changed(max_health:int)
 
 var current_health:int :
 	set(val):
+		if is_hurt == true:
+			return
 		var old_health = current_health
 		current_health = clamp(val, 0, max_health)
 
@@ -35,7 +37,7 @@ var current_health:int :
 var is_hurt:bool = false :
 	set(val):
 		if val == is_hurt:
-			pass
+			return
 		is_hurt = val
 
 		match is_hurt:
