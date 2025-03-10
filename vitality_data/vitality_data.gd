@@ -50,9 +50,9 @@ var is_hurt:bool = false :
 		emit_changed()
 
 func _init() -> void:
-	current_health = max_health
 	if max_health == min_health:
 		print("WARNING: MAXIMUM HEALTH IS EQUAL TO MINIMUM HEALTH")
+	current_health = max_health
 
 func set_max_health(new_value:int) -> void:
 	max_health = new_value
