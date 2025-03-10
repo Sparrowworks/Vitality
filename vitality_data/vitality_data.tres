@@ -1,0 +1,6 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://dt3d8eof6xcc4"]
+
+[ext_resource type="Script" uid="uid://cbwbgtc8mwen4" path="res://vitality_data/vitality_data.gd" id="1_6lelf"]
+
+[resource]
+script = ExtResource("1_6lelf")
