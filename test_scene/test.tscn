@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://35tvb82ubftw"]
+[gd_scene load_steps=3 format=3 uid="uid://35tvb82ubftw"]
 
 [ext_resource type="Script" uid="uid://60lwhy67i7ng" path="res://test_scene/test.gd" id="1_n1udo"]
+[ext_resource type="Resource" uid="uid://dt3d8eof6xcc4" path="res://vitality_data/vitality_data.tres" id="2_x35se"]
 
 [node name="Test" type="Control"]
 layout_mode = 3
@@ -10,3 +11,4 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_n1udo")
+data = ExtResource("2_x35se")

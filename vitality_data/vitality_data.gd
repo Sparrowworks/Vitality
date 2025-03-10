@@ -31,6 +31,7 @@ var current_health:int :
 
 		health_changed.emit(current_health)
 		if current_health <= 0:
+			print("dead")
 			died.emit()
 		emit_changed()
 
@@ -53,6 +54,14 @@ func _init() -> void:
 	if max_health == 0:
 		print("WARNING: MAXIMUM HEALTH IS 0")
 	current_health = max_health
+	change_health(10)
+	change_health(-50)
+	change_health(50)
+	change_health(-999999)
+
+func change_health(amount:int) -> void:
+	current_health += amount
+	print(current_health)
 
 func set_max_health(new_value:int) -> void:
 	max_health = new_value
